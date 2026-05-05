@@ -1,121 +1,101 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
 import './App.css'
+import myPhoto from './assets/photo.jpg';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.tsx</code> and save to test <code>HMR</code>
+    <div style={{ display: 'flex', height: '100vh', width: '100vw' }}>
+      <div style={{
+        width: '20%',
+        backgroundColor: '#1e293b',
+        color: 'white',
+        padding: '40px',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center'
+      }}>
+
+        <img
+          src={myPhoto}
+          alt="大頭照"
+          style={{
+            width: '150px',
+            height: '150px',
+            borderRadius: '50%', // 變成圓形，如果是 0% 就是方形
+            objectFit: 'cover',   // 避免照片比例被拉伸
+            border: '4px solid #3b82f6', // 加入藍色邊框增加專業感
+            marginBottom: '20px'
+          }}
+        />
+
+        <div style={{ width: '100%', textAlign: 'left' }}>
+          <h3 style={{
+            fontSize: '20px',
+            borderBottom: '1px solid #475569',
+            paddingBottom: '8px',
+            marginBottom: '12px',
+            color: '#3b82f6'
+          }}>
+            學歷
+          </h3>
+
+          <p style={{ fontSize: '16px', margin: '0', fontWeight: 'bold' }}>
+            國立政治大學
+          </p>
+          <p style={{ fontSize: '14px', color: '#94a3b8', marginTop: '4px' }}>
+            金融學系 | 2012-2016
+          </p>
+          <h3 style={{
+            fontSize: '20px',
+            borderBottom: '1px solid #475569',
+            paddingBottom: '8px',
+            marginBottom: '12px',
+            color: '#3b82f6'
+          }}>
+            工作技能
+          </h3>
+          <p style={{ fontSize: '16px', margin: '0', fontWeight: 'bold' }}>
+            程式語言
+          </p>
+          <p style={{ fontSize: '14px', color: '#94a3b8', marginTop: '4px' }}>
+            Python
+          </p>
+          <h3 style={{
+            fontSize: '20px',
+            borderBottom: '1px solid #475569',
+            paddingBottom: '8px',
+            marginBottom: '12px',
+            color: '#3b82f6'
+          }}>
+            工作經驗
+          </h3>
+          <p style={{ fontSize: '16px', margin: '0', fontWeight: 'bold' }}>
+            無限方舟
+          </p>
+          <p style={{ fontSize: '14px', color: '#94a3b8', marginTop: '4px' }}>
+            某某專案
+          </p>
+
+          <h3 style={{
+            fontSize: '20px',
+            borderBottom: '1px solid #475569',
+            paddingBottom: '8px',
+            marginTop: '30px',
+            marginBottom: '12px',
+            color: '#3b82f6'
+          }}>
+            專業證照
+          </h3>
+          <p style={{ fontSize: '14px', color: '#94a3b8' }}>
+            TOEIC 695
           </p>
         </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+      </div>
 
-      <div className="ticks"></div>
 
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
+      <div style={{ width: '80%', backgroundColor: '#f8fafc' }}>
+        工作經歷
+      </div>
+    </div>
   )
 }
 
