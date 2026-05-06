@@ -3,7 +3,7 @@ import myPhoto from './assets/photo.jpg';
 
 function App() {
   return (
-    <div style={{ display: 'flex', height: '100vh', width: '100vw' }}>
+    <div style={{ display: 'flex', minHeight: '100vh', width: '100vw' }}>
       <div style={{
         width: '20%',
         backgroundColor: '#1e293b',
@@ -44,37 +44,12 @@ function App() {
           <p style={{ fontSize: '14px', color: '#94a3b8', marginTop: '4px' }}>
             金融學系 | 2012-2016
           </p>
-          <h3 style={{
-            fontSize: '20px',
-            borderBottom: '1px solid #475569',
-            paddingBottom: '8px',
-            marginBottom: '12px',
-            color: '#3b82f6'
-          }}>
-            工作技能
-          </h3>
           <p style={{ fontSize: '16px', margin: '0', fontWeight: 'bold' }}>
-            程式語言
+            台南高商
           </p>
           <p style={{ fontSize: '14px', color: '#94a3b8', marginTop: '4px' }}>
-            Python
+            國際貿易科 | 2009-2012
           </p>
-          <h3 style={{
-            fontSize: '20px',
-            borderBottom: '1px solid #475569',
-            paddingBottom: '8px',
-            marginBottom: '12px',
-            color: '#3b82f6'
-          }}>
-            工作經驗
-          </h3>
-          <p style={{ fontSize: '16px', margin: '0', fontWeight: 'bold' }}>
-            無限方舟
-          </p>
-          <p style={{ fontSize: '14px', color: '#94a3b8', marginTop: '4px' }}>
-            某某專案
-          </p>
-
           <h3 style={{
             fontSize: '20px',
             borderBottom: '1px solid #475569',
@@ -88,6 +63,69 @@ function App() {
           <p style={{ fontSize: '14px', color: '#94a3b8' }}>
             TOEIC 695
           </p>
+          <h3 style={{
+            fontSize: '20px',
+            borderBottom: '1px solid #475569',
+            paddingBottom: '8px',
+            marginBottom: '12px',
+            color: '#3b82f6'
+          }}>
+            工作技能
+          </h3>
+          <p style={{ fontSize: '16px', margin: '0', fontWeight: 'bold' }}>
+            程式語言
+          </p>
+          <p style={{ fontSize: '14px', color: '#94a3b8', marginTop: '4px' }}>
+            Python:<br />
+            odoo、sqlalchemy、flask、pytest、fastapi<br />
+          </p>
+          <p style={{ fontSize: '16px', margin: '0', fontWeight: 'bold' }}>
+            資料庫:
+          </p>
+          <p style={{ fontSize: '14px', color: '#94a3b8', marginTop: '4px' }}>
+            postgresql、mysql、oracle、mongodb、pandas<br />
+
+          </p>
+          <p style={{ fontSize: '16px', margin: '0', fontWeight: 'bold' }}>
+            其他工具
+          </p>
+          <p style={{ fontSize: '14px', color: '#94a3b8', marginTop: '4px' }}>
+            git、docker、rabbitmq、grasshopper
+          </p>
+          <h3 style={{
+            fontSize: '20px',
+            borderBottom: '1px solid #475569',
+            paddingBottom: '8px',
+            marginBottom: '12px',
+            color: '#3b82f6'
+          }}>
+            工作經驗
+          </h3>
+          <p style={{ fontSize: '16px', margin: '0', fontWeight: 'bold' }}>
+            旻新科技 | 後端工程師
+          </p>
+          <p style={{ fontSize: '14px', color: '#94a3b8', marginTop: '4px' }}>
+            專案重構<br />
+            賽鴿系統套件升級
+          </p>
+          <br/>
+          <p style={{ fontSize: '16px', margin: '0', fontWeight: 'bold' }}>
+            OneDegree | 後端工程師
+          </p>
+          <p style={{ fontSize: '14px', color: '#94a3b8', marginTop: '4px' }}>
+            寵物險 1.0<br />
+            資安弱掃<br />
+            寵物險 2.0<br />
+            高擴充性保險系統開發
+          </p>
+          <br/>
+          <p style={{ fontSize: '16px', margin: '0', fontWeight: 'bold' }}>
+            無限方舟 | 資料工程師
+          </p>
+          <p style={{ fontSize: '14px', color: '#94a3b8', marginTop: '4px' }}>
+            台北市交通運輸分析
+          </p>
+
         </div>
       </div>
 
